@@ -1,0 +1,16 @@
+{
+    "name": "Simple Django Dev Container",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "django_web",
+    "workspaceFolder": "/code",
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.linting.pylintPath": "/usr/local/bin/pylint"
+    },
+    "postCreateCommand": "poetry install",
+    "extensions": [
+        "ms-python.python"
+    ]
+}
