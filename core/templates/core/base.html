@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Django Bootstrap Template"/>
+        <meta name="keywords" content="Django, Bootstrap"/>
+        <meta name="author" content="Bradley Marques"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>
+            {% block title %}
+                A Meaningful Page Title
+            {% endblock title %}
+        </title>
+        {% block head_css %}
+        {% endblock head_css %}
+    </head>
+    {% block body %}
+        <body>
+            The default body
+        </body>
+    {% endblock body %}
+</html>
