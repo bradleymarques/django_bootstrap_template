@@ -1,4 +1,4 @@
 .env
-postgres_data/
+data/
 *.sqlite3
 **/__pycache__
