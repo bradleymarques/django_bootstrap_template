@@ -3,7 +3,6 @@
 ## What's included
 
 + Poetry
-+ A DevContainer
 + Black
 + Docker Image
 + Code coverage with automatic posting to GitHub PRs
