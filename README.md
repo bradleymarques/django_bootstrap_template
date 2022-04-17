@@ -1,5 +1,7 @@
 # Django Python Template
 
+A sane template for development with Django and Bootstrap
+
 ## What's included
 
 + A dev container
