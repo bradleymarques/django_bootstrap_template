@@ -1,3 +1,5 @@
+{% load bootstrap5 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -11,12 +13,18 @@
                 A Meaningful Page Title
             {% endblock title %}
         </title>
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
         {% block head_css %}
         {% endblock head_css %}
+        <link rel="shortcut icon"
+              type="image/png"
+              href="{% static 'images/favicon.ico' %}"/>
     </head>
-    {% block body %}
-        <body>
+    <body {% block body_classes %}{% endblock body_classes %}>
+        {% bootstrap_messages %}
+        {% block body %}
             The default body
-        </body>
-    {% endblock body %}
+        {% endblock body %}
+    </body>
 </html>

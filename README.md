@@ -2,11 +2,19 @@
 
 A sane template for development with Django and Bootstrap
 
-## What's included
+## What's Included Now
 
-- [x] A dev container
-- [x] Poetry
-- [x] Black
-- [x] Docker Image
-- [ ] Code coverage with automatic posting to GitHub PRs
-- [ ] Some wicked git hooks
++ ✅ Docker Image
++ ✅ A dev container
++ ✅ Poetry
++ ✅ Black
+
+## What's Planned
+
++ 📆 Code coverage with automatic posting to GitHub PRs
++ 📆 100% test coverage
++ 📆 Some wicked git hooks
++ 📆 Launch file
++ 📆 User sign-up
++ 📆 User sign-in
++ 📆 SSO with GitHub
