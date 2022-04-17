@@ -8,5 +8,5 @@ A sane template for development with Django and Bootstrap
 - [x] Poetry
 - [x] Black
 - [x] Docker Image
-- [] Code coverage with automatic posting to GitHub PRs
-- [] Some wicked git hooks
+- [ ] Code coverage with automatic posting to GitHub PRs
+- [ ] Some wicked git hooks
