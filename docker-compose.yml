@@ -1,30 +1,13 @@
 version: "3.9"
 
 services:
-  django_postgres:
-    image: postgres
-    volumes:
-      - ./data/db:/var/lib/postgresql/data
-    environment:
-      POSTGRES_DB: ${POSTGRES_DATABASE_NAME}
-      POSTGRES_USER: ${POSTGRES_USERNAME}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    ports:
-      - "5435:5432"
-
   django_web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000 --settings=django_project_name.settings.postgres_settings
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
       - "8000:8000"
     environment:
-      POSTGRES_DATABASE_NAME: ${POSTGRES_DATABASE_NAME}
-      POSTGRES_USERNAME: ${POSTGRES_USERNAME}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_HOST: ${POSTGRES_HOST}
       DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY}
       DJANGO_DEBUG_MODE: ${DJANGO_DEBUG_MODE}
-    depends_on:
-      - django_postgres

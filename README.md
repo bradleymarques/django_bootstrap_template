@@ -2,6 +2,7 @@
 
 ## What's included
 
++ A dev container
 + Poetry
 + Black
 + Docker Image
