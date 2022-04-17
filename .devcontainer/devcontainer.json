@@ -11,6 +11,19 @@
     },
     "postCreateCommand": "poetry install",
     "extensions": [
-        "ms-python.python"
+        "alexcvzz.vscode-sqlite",
+        "batisteo.vscode-django",
+        "bungcip.better-toml",
+        "christian-kohler.path-intellisense",
+        "eamodio.gitlens",
+        "hbenl.vscode-test-explorer",
+        "monosans.djlint",
+        "ms-python.black-formatter",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-vscode.test-adapter-converter",
+        "npxms.hide-gitignored",
+        "streetsidesoftware.code-spell-checker",
+        "wmaurer.change-case",
     ]
 }
